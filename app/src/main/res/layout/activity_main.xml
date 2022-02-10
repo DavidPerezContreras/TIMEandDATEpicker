@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center_horizontal"
+    android:paddingTop="50dp"
+    android:orientation="vertical"
+    android:id="@+id/rootLL">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Selecciona una fecha por favor."
+        android:textSize="18sp"/>
+    <EditText
+        android:id="@+id/edittextFecha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:textSize="20sp"
+        android:clickable="false"
+        android:focusable="false"/>
+
+
+    <TextView
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Selecciona una hora por favor."
+        android:textSize="18sp"/>
+    <EditText
+        android:id="@+id/edittextHora"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_200"
+        android:textSize="20sp"
+        android:clickable="false"
+        android:focusable="false"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <NumberPicker
+            android:id="@+id/numberpickerHora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="30dp"
+
+        />
+
+        <NumberPicker
+            android:id="@+id/numberpickerMinuto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+        />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonPedirCita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pedir cita" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="14sp"
+        android:text="Horario del centro:\n8:15 - 2:45"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:id="@+id/textViewResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text=""
+        android:textSize="20sp" />
+
+
+</LinearLayout>
